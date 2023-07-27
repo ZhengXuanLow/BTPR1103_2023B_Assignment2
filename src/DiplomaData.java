@@ -34,10 +34,10 @@ public class DiplomaData {
     @Override
     public String toString() {
         return bilangan +
-                ", Category='" + category + '\'' +
+                ". Category='" + category + '\'' +
                 ", Name='" + name + '\'' +
                 ", Intake2014=" + intake2014 +
-                ", IIntake2015=" + intake2015 +
+                ", Intake2015=" + intake2015 +
                 ", Intake2016=" + intake2016 +
                 ", Intake2017=" + intake2017 +
                 ", Intake2018=" + intake2018 +
