@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    static int total = 0;
-
 
     public static void main(String[] args) {
         File diploma = new File("diploma.csv");
@@ -54,9 +52,6 @@ public class Main {
                 total2017 += Integer.parseInt(items[6]);
                 total2018 += Integer.parseInt(items[7]);
                 total2019 += Integer.parseInt(items[8]);
-
-                //FindTotal
-                total = total2014 + total2015 + total2016 +total2017 +total2018 +total2019;
 
                 //Add into diplomaDataArrayList
                 diplomaDataArrayList.add(data);
@@ -110,10 +105,12 @@ public class Main {
             DiplomaData.findMax(total2014,total2015,total2016,total2017,total2018,total2019);
             //findMin
             DiplomaData.findMin(total2014,total2015,total2016,total2017,total2018,total2019);
+            //findTotal
+            DiplomaData.findTotal(total2014,total2015,total2016,total2017,total2018,total2019);
 
             System.out.println("The maximum number of intakes between 2014 to 2019 is "+ DiplomaData.getMaxYear()+" with " + DiplomaData.getMax()+" intakes.");
             System.out.println("The maximum number of intakes between 2014 to 2019 is "+ DiplomaData.getMinYear()+" with " + DiplomaData.getMin()+" intakes.");
-            System.out.println("The total number of intakes between 2014 to 2019 is "+total +" .");
+            System.out.println("The total number of intakes between 2014 to 2019 is "+ DiplomaData.getTotal() +" .");
 
         }catch (FileNotFoundException exception)
         {

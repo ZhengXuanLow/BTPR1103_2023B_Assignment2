@@ -15,6 +15,7 @@ public class DiplomaData {
     private static int max;
     private static int minYear;
     private static int maxYear;
+    private static int total;
 
 
 
@@ -156,6 +157,14 @@ public class DiplomaData {
         DiplomaData.maxYear = maxYear;
     }
 
+    public static int getTotal() {
+        return total;
+    }
+
+    public static void setTotal(int total) {
+        DiplomaData.total = total;
+    }
+
     //findMin and findMax function
     public static void findMin(int total2014, int total2015, int total2016, int total2017, int total2018, int total2019)
     {
@@ -212,5 +221,12 @@ public class DiplomaData {
         maxYear = 2019;
     }
     }
+
+    public static void findTotal(int total2014, int total2015, int total2016, int total2017, int total2018, int total2019)
+    {
+        total = total2014 + total2015 + total2016 +total2017 +total2018 +total2019;
+    }
+
+
 }
 
