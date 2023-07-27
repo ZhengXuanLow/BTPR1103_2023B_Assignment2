@@ -17,8 +17,6 @@ public class DiplomaData {
     private static int maxYear;
     private static int total;
 
-
-
     //Constructor with Parameter
     public DiplomaData(int bilangan, String category, String name, int intake2014, int intake2015, int intake2016, int intake2017, int intake2018, int intake2019) {
         this.bilangan = bilangan;
