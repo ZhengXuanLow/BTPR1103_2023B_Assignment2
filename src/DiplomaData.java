@@ -38,9 +38,6 @@ public class DiplomaData {
                 ;
     }
 
-    //findMin and findMax function
-
-
 
 }
 
